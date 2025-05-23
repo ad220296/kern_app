@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mitarbeiterverwaltung</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Mitarbeiter eingeben</h1>
+  <form id="employeeForm">
+    <input type="text" name="firstname" placeholder="Vorname" required />
+    <input type="text" name="lastname" placeholder="Nachname" required />
+    <input type="email" name="email" placeholder="E-Mail" required />
+    <input type="text" name="position" placeholder="Position" />
+    <input type="date" name="hired_date" placeholder="Einstellungsdatum" />
+    <button type="submit">Speichern</button>
+  </form>
+
+  <h2>Mitarbeitersuche</h2>
+  <input type="text" id="searchInput" placeholder="Suchen..." />
+  <button onclick="loadEmployees()">Suchen</button>
+  <button onclick="showAll()">Gesamte Liste</button>
+
+  <h2>Mitarbeiterliste</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Vorname</th><th>Nachname</th><th>E-Mail</th><th>Position</th><th>Eingestellt</th><th>Aktiv</th>
+      </tr>
+    </thead>
+    <tbody id="employeeTable"></tbody>
+  </table>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
