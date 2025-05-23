@@ -17,11 +17,15 @@ form.addEventListener('submit', async (e) => {
   loadEmployees();
 });
 
+// Funktion zum Laden und Anzeigen der Mitarbeiterliste
 async function loadEmployees() {
+  // Holt den Suchbegriff aus dem Eingabefeld
   const query = document.getElementById('searchInput').value;
+  // Fragt die Mitarbeiterdaten vom Server ab (mit Suchbegriff)
   const res = await fetch(`/api/employees?search=${encodeURIComponent(query)}`);
   const employees = await res.json();
 
+  // Baut die Tabelle mit den erhaltenen Mitarbeiterdaten auf
   table.innerHTML = employees.map(e => `
     <tr>
       <td>${e.firstname}</td>
@@ -34,9 +38,11 @@ async function loadEmployees() {
   `).join('');
 }
 
+// Setzt das Suchfeld zurück und lädt alle Mitarbeiter
 function showAll() {
   document.getElementById('searchInput').value = '';
   loadEmployees();
 }
 
+// Lädt beim Start die Mitarbeiterliste
 loadEmployees();
