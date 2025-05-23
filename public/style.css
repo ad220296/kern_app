@@ -1,7 +1,12 @@
+/* Grundlegendes Layout und Schriftart */
 body { font-family: sans-serif; padding: 20px; }
+/* Abstand unter Formular und Tabelle */
 form, table { margin-bottom: 20px; }
+/* Tabelle ohne doppelte Rahmen, volle Breite */
 table { border-collapse: collapse; width: 100%; }
+/* Zellen mit Rahmen und Innenabstand */
 td, th { border: 1px solid #ccc; padding: 8px; }
+/* Eingabefelder mit fester Breite und Abstand */
 input[type="text"], input[type="email"], input[type="date"] {
   width: 200px;
   margin-right: 5px;
