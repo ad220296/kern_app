@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <title>Employee Management</title>
+  <!-- Einbinden der CSS-Datei für das Styling -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Mitarbeiter eingeben</h1>
+  <!-- Formular zur Eingabe eines neuen Mitarbeiters -->
   <form id="employeeForm">
     <input type="text" name="firstname" placeholder="Vorname" required />
     <input type="text" name="lastname" placeholder="Nachname" required />
@@ -17,11 +19,13 @@
   </form>
 
   <h2>Mitarbeitersuche</h2>
+  <!-- Suchfeld für Mitarbeiter -->
   <input type="text" id="searchInput" placeholder="Suchen..." />
   <button onclick="loadEmployees()">Suchen</button>
   <button onclick="showAll()">Gesamte Liste</button>
 
   <h2>Mitarbeiterliste</h2>
+  <!-- Tabelle zur Anzeige der Mitarbeiterdaten -->
   <table>
     <thead>
       <tr>
@@ -31,6 +35,7 @@
     <tbody id="employeeTable"></tbody>
   </table>
 
+  <!-- Einbinden der JavaScript-Datei für die Logik -->
   <script src="script.js" defer></script>
 </body>
 </html>
