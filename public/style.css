@@ -1,13 +1,108 @@
 /* Grundlegendes Layout und Schriftart */
-body { font-family: sans-serif; padding: 20px; }
+body { 
+  font-family: sans-serif; 
+  padding: 20px; 
+  background: #eef2f3;
+}
+
 /* Abstand unter Formular und Tabelle */
-form, table { margin-bottom: 20px; }
+form, table { 
+  margin-bottom: 20px; 
+}
+
 /* Tabelle ohne doppelte Rahmen, volle Breite */
-table { border-collapse: collapse; width: 100%; }
+table { 
+  border-collapse: collapse; 
+  width: 100%; 
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+  margin-bottom: 30px;
+}
+
 /* Zellen mit Rahmen und Innenabstand */
-td, th { border: 1px solid #ccc; padding: 8px; }
+td, th { 
+  border: 1px solid #e1e1e1; 
+  padding: 10px; 
+  text-align: center;
+}
+
 /* Eingabefelder mit fester Breite und Abstand */
 input[type="text"], input[type="email"], input[type="date"] {
   width: 200px;
   margin-right: 5px;
+}
+
+/* Überschriften zentrieren und optisch hervorheben */
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Formular optisch hervorheben */
+form {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+form input, form button {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  font-size: 1em;
+}
+
+form button {
+  background: #2c3e50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+form button:hover {
+  background: #1abc9c;
+}
+
+/* Suchfeld und Buttons mittig */
+#searchInput, button[onclick] {
+  display: inline-block;
+  margin: 0 5px 20px 5px;
+}
+#searchInput {
+  width: 250px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Tabelle optisch verbessern */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+  margin-bottom: 30px;
+}
+th {
+  background: #1abc9c;
+  color: #fff;
+  font-weight: 600;
+}
+td, th {
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  text-align: center;
+}
+tr:nth-child(even) {
+  background: #f8f9fa;
 }
