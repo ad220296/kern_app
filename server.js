@@ -1,3 +1,4 @@
+// imports
 import express from 'express';
 import pg from 'pg';
 import bodyParser from 'body-parser';
@@ -61,7 +62,6 @@ app.get('/api/employees', async (req, res) => {
     // Gibt die gefundenen Mitarbeiter als JSON zurück
     res.json(result.rows);
   } catch (error) {
-    // Fehlerbehandlung bei Datenbankproblemen
     console.error('Fehler beim Abrufen:', error);
     res.status(500).send('Serverfehler');
   }
