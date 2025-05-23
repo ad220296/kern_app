@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Mitarbeiter eingeben</h1>
+  <!-- Schöne, farbige Hauptüberschrift -->
+  <h1 class="main-title">Employee Management</h1>
+  
+  <h2>Mitarbeiter eingeben</h2>
   <!-- Formular zur Eingabe eines neuen Mitarbeiters -->
   <form id="employeeForm">
     <input type="text" name="firstname" placeholder="Vorname" required />
@@ -19,10 +22,12 @@
   </form>
 
   <h2>Mitarbeitersuche</h2>
-  <!-- Suchfeld für Mitarbeiter -->
-  <input type="text" id="searchInput" placeholder="Suchen..." />
-  <button onclick="loadEmployees()">Suchen</button>
-  <button onclick="showAll()">Gesamte Liste</button>
+  <!-- Suchfeld für Mitarbeiter, jetzt mittig mit .search-bar -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Suchen..." />
+    <button onclick="loadEmployees()">Suchen</button>
+    <button onclick="showAll()">Gesamte Liste</button>
+  </div>
 
   <h2>Mitarbeiterliste</h2>
   <!-- Tabelle zur Anzeige der Mitarbeiterdaten -->
