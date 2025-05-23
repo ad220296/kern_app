@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Express-Anwendung mit PostgreSQL-Anbindung zur Verwaltung von Mitarbeiterdaten",
   "dependencies": {
     "body-parser": "^2.2.0",
     "express": "^5.1.0",
